@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Listings · MarketSync</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="main-shell">
+
+    <header class="app-header">
+      <div class="app-header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">MS</div>
+          <div class="brand-text">
+            <span class="brand-name">MarketSync</span>
+            <span class="brand-sub">Multi-channel listings</span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="dashboard.html" class="">Dashboard</a>
+          <a href="products.html" class="">Products</a>
+          <a href="listings.html" class="active">Listings</a>
+          <a href="orders.html" class="">Orders</a>
+          <a href="connect.html" class="">Connections</a>
+          <a href="settings.html" class="">Settings</a>
+        </nav>
+        <div class="header-cta">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="login.html" class="btn btn-primary">Open Console</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+<div class="page-shell">
+  <div class="page-header">
+    <div>
+      <div class="page-title">Listings</div>
+      <div class="section-subtitle">All channels, all seller accounts, one clean view.</div>
+    </div>
+    <div class="page-controls">
+      <button class="btn btn-outline">Filter</button>
+      <button class="btn btn-primary">Bulk sync</button>
+    </div>
+  </div>
+
+  <div class="table-wrapper">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Variant SKU</th>
+          <th>Marketplace</th>
+          <th>Account</th>
+          <th>Region</th>
+          <th>Status</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Last sync</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Navy Essential Hoodie</td>
+          <td>HOODIE-NAVY-M</td>
+          <td>Amazon</td>
+          <td>Main Store</td>
+          <td>IN</td>
+          <td><span class="badge badge-success">Active</span></td>
+          <td>₹1,299</td>
+          <td>48</td>
+          <td>Just now</td>
+        </tr>
+        <tr>
+          <td>Navy Essential Hoodie</td>
+          <td>HOODIE-NAVY-M</td>
+          <td>Flipkart</td>
+          <td>Flipkart Fashion</td>
+          <td>IN</td>
+          <td><span class="badge badge-success">Active</span></td>
+          <td>₹1,279</td>
+          <td>48</td>
+          <td>3 min ago</td>
+        </tr>
+        <tr>
+          <td>Navy Essential Hoodie</td>
+          <td>HOODIE-NAVY-M</td>
+          <td>Amazon</td>
+          <td>US Apparel</td>
+          <td>US</td>
+          <td><span class="badge badge-warning">Warning</span></td>
+          <td>$24.00</td>
+          <td>12</td>
+          <td>18 min ago</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+    </main>
+    <footer class="app-footer">
+      © 2025 MarketSync · Multi-channel product & order sync
+    </footer>
+  </div>
+</body>
+</html>

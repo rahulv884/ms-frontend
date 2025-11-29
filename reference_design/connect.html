@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Connections · MarketSync</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="main-shell">
+
+    <header class="app-header">
+      <div class="app-header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">MS</div>
+          <div class="brand-text">
+            <span class="brand-name">MarketSync</span>
+            <span class="brand-sub">Multi-channel listings</span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="dashboard.html" class="">Dashboard</a>
+          <a href="products.html" class="">Products</a>
+          <a href="listings.html" class="">Listings</a>
+          <a href="orders.html" class="">Orders</a>
+          <a href="connect.html" class="active">Connections</a>
+          <a href="settings.html" class="">Settings</a>
+        </nav>
+        <div class="header-cta">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="login.html" class="btn btn-primary">Open Console</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+<div class="page-shell">
+  <div class="page-header">
+    <div>
+      <div class="page-title">Marketplace connections</div>
+      <div class="section-subtitle">Connect Amazon, Flipkart, Meesho and more — including multiple seller accounts per region.</div>
+    </div>
+    <div class="page-controls">
+      <button class="btn btn-primary">Add connection</button>
+    </div>
+  </div>
+
+  <div class="two-column">
+    <div class="card">
+      <div class="card-title">Connected accounts</div>
+      <div class="card-meta">All live seller accounts linked to this workspace.</div>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Marketplace</th>
+              <th>Account label</th>
+              <th>Region</th>
+              <th>Status</th>
+              <th>Last sync</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Amazon</td>
+              <td>Main Store</td>
+              <td>IN</td>
+              <td><span class="badge badge-success">Active</span></td>
+              <td>2 min ago</td>
+            </tr>
+            <tr>
+              <td>Amazon</td>
+              <td>Outlet / Clearance</td>
+              <td>IN</td>
+              <td><span class="badge badge-success">Active</span></td>
+              <td>5 min ago</td>
+            </tr>
+            <tr>
+              <td>Amazon</td>
+              <td>US Apparel</td>
+              <td>US</td>
+              <td><span class="badge badge-warning">Token expiring</span></td>
+              <td>14 min ago</td>
+            </tr>
+            <tr>
+              <td>Flipkart</td>
+              <td>Flipkart Fashion</td>
+              <td>IN</td>
+              <td><span class="badge badge-success">Active</span></td>
+              <td>1 min ago</td>
+            </tr>
+            <tr>
+              <td>Meesho</td>
+              <td>Meesho India</td>
+              <td>IN</td>
+              <td><span class="badge badge-muted">Paused</span></td>
+              <td>Yesterday</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Add a new connection</div>
+      <div class="card-meta">Use OAuth or API keys depending on the marketplace.</div>
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="mp">Marketplace</label>
+          <select id="mp">
+            <option>Amazon</option>
+            <option>Flipkart</option>
+            <option>Meesho</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="region">Region</label>
+          <select id="region">
+            <option>IN</option>
+            <option>US</option>
+            <option>EU</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="label">Account label</label>
+          <input id="label" placeholder="e.g. Amazon IN • Main Store" />
+        </div>
+        <div class="form-field">
+          <label for="mode">Auth mode</label>
+          <select id="mode">
+            <option>OAuth (recommended)</option>
+            <option>API keys</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-primary">Begin connection</button>
+        <button class="btn btn-outline">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+    <footer class="app-footer">
+      © 2025 MarketSync · Multi-channel product & order sync
+    </footer>
+  </div>
+</body>
+</html>

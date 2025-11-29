@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Variant Editor · MarketSync</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="main-shell">
+
+    <header class="app-header">
+      <div class="app-header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">MS</div>
+          <div class="brand-text">
+            <span class="brand-name">MarketSync</span>
+            <span class="brand-sub">Multi-channel listings</span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="dashboard.html" class="">Dashboard</a>
+          <a href="products.html" class="active">Products</a>
+          <a href="listings.html" class="">Listings</a>
+          <a href="orders.html" class="">Orders</a>
+          <a href="connect.html" class="">Connections</a>
+          <a href="settings.html" class="">Settings</a>
+        </nav>
+        <div class="header-cta">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="login.html" class="btn btn-primary">Open Console</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+<div class="page-shell">
+  <div class="page-header">
+    <div>
+      <div class="page-title">Navy Essential Hoodie</div>
+      <div class="section-subtitle">Edit variants, attributes and inventory before syncing to marketplaces.</div>
+    </div>
+    <div class="page-controls">
+      <a href="products.html" class="btn btn-outline">Back to products</a>
+      <button class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+
+  <div class="two-column">
+    <div class="card">
+      <div class="card-title">Variants</div>
+      <div class="card-meta">Each row represents a unique sellable SKU.</div>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Color</th>
+              <th>Variant SKU</th>
+              <th>Price</th>
+              <th>Stock</th>
+              <th>Listings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>M</td>
+              <td>Navy</td>
+              <td>HOODIE-NAVY-M</td>
+              <td>₹1,299</td>
+              <td>48</td>
+              <td>Amazon (3) • Flipkart (1)</td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>Navy</td>
+              <td>HOODIE-NAVY-L</td>
+              <td>₹1,299</td>
+              <td>42</td>
+              <td>Amazon (3) • Flipkart (1)</td>
+            </tr>
+            <tr>
+              <td>XL</td>
+              <td>Navy</td>
+              <td>HOODIE-NAVY-XL</td>
+              <td>₹1,349</td>
+              <td>38</td>
+              <td>Amazon (2)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Attributes & inventory</div>
+      <div class="card-meta">Edit shared attributes and inventory settings.</div>
+      <div class="form-grid">
+        <div class="form-field">
+          <label>Brand</label>
+          <input value="MarketSync Originals" />
+        </div>
+        <div class="form-field">
+          <label>Category</label>
+          <input value="Apparel / Hoodies" />
+        </div>
+        <div class="form-field">
+          <label>Default tax code</label>
+          <input value="IN-GST-APPAREL-12%" />
+        </div>
+        <div class="form-field">
+          <label>Safety stock (per variant)</label>
+          <input value="5" />
+        </div>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-primary">Apply to all variants</button>
+        <button class="btn btn-outline">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+    <footer class="app-footer">
+      © 2025 MarketSync · Multi-channel product & order sync
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Orders · MarketSync</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="main-shell">
+
+    <header class="app-header">
+      <div class="app-header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">MS</div>
+          <div class="brand-text">
+            <span class="brand-name">MarketSync</span>
+            <span class="brand-sub">Multi-channel listings</span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="dashboard.html" class="">Dashboard</a>
+          <a href="products.html" class="">Products</a>
+          <a href="listings.html" class="">Listings</a>
+          <a href="orders.html" class="active">Orders</a>
+          <a href="connect.html" class="">Connections</a>
+          <a href="settings.html" class="">Settings</a>
+        </nav>
+        <div class="header-cta">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="login.html" class="btn btn-primary">Open Console</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+<div class="page-shell">
+  <div class="page-header">
+    <div>
+      <div class="page-title">Orders</div>
+      <div class="section-subtitle">Unified order view across Amazon, Flipkart and Meesho.</div>
+    </div>
+    <div class="page-controls">
+      <button class="btn btn-outline">Import now</button>
+      <button class="btn btn-primary">Export report</button>
+    </div>
+  </div>
+
+  <div class="table-wrapper">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Marketplace</th>
+          <th>Account</th>
+          <th>Date</th>
+          <th>Items</th>
+          <th>Total</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>IN-438291</td>
+          <td>Amazon</td>
+          <td>Main Store</td>
+          <td>Today, 09:52</td>
+          <td>3</td>
+          <td>₹3,997</td>
+          <td><span class="badge badge-success">Shipped</span></td>
+        </tr>
+        <tr>
+          <td>FK-882110</td>
+          <td>Flipkart</td>
+          <td>Flipkart Fashion</td>
+          <td>Today, 09:21</td>
+          <td>1</td>
+          <td>₹1,279</td>
+          <td><span class="badge badge-warning">Awaiting pickup</span></td>
+        </tr>
+        <tr>
+          <td>US-993011</td>
+          <td>Amazon</td>
+          <td>US Apparel</td>
+          <td>Yesterday, 21:10</td>
+          <td>2</td>
+          <td>$48.00</td>
+          <td><span class="badge badge-muted">Delivered</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+    </main>
+    <footer class="app-footer">
+      © 2025 MarketSync · Multi-channel product & order sync
+    </footer>
+  </div>
+</body>
+</html>

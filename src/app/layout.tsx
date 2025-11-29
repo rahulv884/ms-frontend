@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MarketSync | Multi-marketplace console",
+  title: "Home · MarketSync",
   description:
     "MarketSync centralizes Amazon, Flipkart, Meesho and more into one clean console for listings, variants and orders.",
 };
@@ -20,56 +20,39 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} bg-soft-gray text-slate-900 antialiased`}
-      >
-        <div className="flex min-h-screen flex-col">
-          <header className="sticky top-0 z-20 border-b border-white/60 bg-soft-gray/80 backdrop-blur">
-            <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
-              <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-navy text-white text-xl font-semibold shadow-subtle">
-                  MS
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.variable}>
+        <div className="main-shell">
+          <header className="app-header">
+            <div className="app-header-inner">
+              <Link href="/" className="brand">
+                <div className="brand-mark">MS</div>
+                <div className="brand-text">
+                  <span className="brand-name">MarketSync</span>
+                  <span className="brand-sub">Multi-channel listings</span>
                 </div>
-                <div>
-                  <p className="text-lg font-semibold text-navy">MarketSync</p>
-                  <p className="text-sm text-slate-500">
-                    Multi-channel listings
-                  </p>
-                </div>
-              </div>
-              <nav className="hidden gap-8 text-sm font-medium text-slate-600 md:flex">
-                <Link href="#product" className="hover:text-navy">
-                  Product
-                </Link>
-                <Link href="#how-it-works" className="hover:text-navy">
-                  How it works
-                </Link>
-                <Link href="#pricing" className="hover:text-navy">
-                  Pricing
-                </Link>
+              </Link>
+              <nav className="nav-links">
+                <Link href="/dashboard">Dashboard</Link>
+                <Link href="/products">Products</Link>
+                <Link href="/listings">Listings</Link>
+                <Link href="/orders">Orders</Link>
+                <Link href="/connect">Connections</Link>
+                <Link href="/settings">Settings</Link>
               </nav>
-              <div className="flex items-center gap-3">
-                <Link
-                  href="/login"
-                  className="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-navy transition hover:border-navy/60"
-                >
+              <div className="header-cta">
+                <Link href="/login" className="btn btn-outline">
                   Log in
                 </Link>
-                <Link
-                  href="/app/dashboard"
-                  className="rounded-full bg-teal px-5 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-teal/90"
-                >
-                  Open console
+                <Link href="/login" className="btn btn-primary">
+                  Open Console
                 </Link>
               </div>
             </div>
           </header>
-          <main className="flex-1">{children}</main>
-          <footer className="border-t border-white/70 bg-white/80">
-            <div className="mx-auto w-full max-w-6xl px-6 py-6 text-sm text-slate-500">
-              © 2025 MarketSync · Multi-channel product & order sync platform
-            </div>
+          {children}
+          <footer className="app-footer">
+            © 2025 MarketSync · Multi-channel product & order sync
           </footer>
         </div>
       </body>
